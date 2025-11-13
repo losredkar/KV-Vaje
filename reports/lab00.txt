@@ -1,0 +1,69 @@
+    1  pwd
+    2 
+    4  cd /home/lukao
+    5  ls
+    6  mkdir linux-vaja
+    7  cd linux-vaja/
+    8  touch opis.txt
+    9  echo Luka >> opis.txt
+   10  cat opis.txt
+   11  mkdir testni
+   12  ls
+   15  sudo mv opis.txt testni/
+   16  ls
+   17  cd testni
+   18  ls
+   19  mv opis.txt moj_profil.txt
+   20 
+   28  cp moj_profil.txt $HOME
+   29  
+
+   41  ls -lh
+   42  chmod 444 moj_profil.txt 
+   43  ls -lh
+   44  whoami
+   
+   ┌──(lukao㉿kali)-[~/linux-vaja]
+└─$ ls -lh                                                                   
+total 8.0K
+-rw-rw-r-- 1 lukao lukao    5 Nov 13 12:50 moj_profil.txt
+drwxrwxr-x 2 lukao lukao 4.0K Nov 13 12:46 testni
+
+┌──(lukao㉿kali)-[~/linux-vaja]
+└─$ chmod 444 moj_profil.txt                                                 
+
+┌──(lukao㉿kali)-[~/linux-vaja]
+└─$ ls -lh
+total 8.0K
+-r--r--r-- 1 lukao lukao    5 Nov 13 12:50 moj_profil.txt
+drwxrwxr-x 2 lukao lukao 4.0K Nov 13 12:46 testni
+
+   
+┌──(lukao㉿kali)-[~/linux-vaja]
+└─$ whoami                                                                   
+lukao
+
+   46  du -sh ~
+   47  df -h
+   ┌──(lukao㉿kali)-[~/linux-vaja]
+└─$ df -h                                                                    
+Filesystem      Size  Used Avail Use% Mounted on
+udev            921M     0  921M   0% /dev
+tmpfs           198M  1.1M  197M   1% /run
+/dev/sda1        79G   16G   60G  21% /
+tmpfs           987M  4.0K  987M   1% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           987M  188K  987M   1% /tmp
+tmpfs           1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           198M  124K  198M   1% /run/user/1000
+tmpfs           198M  124K  198M   1% /run/user/1001
+
+   48  du -ah ~ | sort -rh | head -n 5
+   24M     /home/lukao
+13M     /home/lukao/.mozilla/firefox/elx4jv61.default-esr
+13M     /home/lukao/.mozilla/firefox
+13M     /home/lukao/.mozilla
+9.9M    /home/lukao/.cache
+
+   49  history > resitve.txt
