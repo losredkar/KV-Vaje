@@ -1,0 +1,10 @@
+Kali Linux je ena izmed dobrih distribucij Linuxa, ki se osredotoča (glede na ostale) predvsem na uporabo za namene informacijske varnosti. Konkretno se lahko uporablja za penetracijske teste, eično hekanje, digitalno forenziko ipd. saj ima prednameščena orodja za te navedene namene. 
+
+Funkcionalnosti:
+-Wireshark,Metasploit (ranljivosti), Nmap (analiza omrežja), Wireshark (analiza paketov v omrežju), Burp Suite... 
+-v ospredju je root access (zato primeren za bolj napredne uporabnike)
+
+
+Pritegnila me je podpora za Name-that-hash, ki omogoča identfikacijo hash algoritma, kar je koristno npr za razbijanje gesel.
+
+Všeč mi je tudu, da so prednameščena že orodja, ki jih potrebujemo za analizo informacijske varnosti (recimo Wireshark za analizo omrežnega prometa), kar nam prihrani veliko časa z namestitvijo.
