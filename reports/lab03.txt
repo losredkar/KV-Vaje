@@ -1,4 +1,6 @@
-Navodila: Primerjava orodij Uporabite oba programa za isto uporabniško ime ter rimerjajte rezultate: katero orodje je našlo več profilov? Katero je dalo bolj pregledne podatke?
+Navodila: Primerjava orodij Uporabite oba programa za isto 
+uporabniško ime ter rimerjajte rezultate: katero orodje je 
+našlo več profilov? Katero je dalo bolj pregledne podatke?
 
 Poiskal sem svoje uporabniško ime s pomočjo obeh orodij. 
 
@@ -8,7 +10,8 @@ Poiskal sem svoje uporabniško ime s pomočjo obeh orodij.
 
 -Maigret:
     -Dobil sem 47 rezultatov
-    +Ponudil več in bolj podrobne rezultate (poišče več lastnosti profila, npr. ali je profil aktiven, kdaj je bil ustvarjen, id, tip računa, slika ...), rezultati so pregledni in strukturirani.
+    +Ponudil več in bolj podrobne rezultate (poišče več lastnosti profila, 
+    npr. ali je profil aktiven, kdaj je bil ustvarjen, id, tip računa, slika ...), rezultati so pregledni in strukturirani.
     +izpiše vse države, kjer so računi najdeni
     +izpiše tags (vrste/žanr/namen spletnih strani)
 
@@ -16,10 +19,14 @@ Ali sta se našla profila na družbenih omrežjih, kjer tega niste pričakovali?
 Da. Obstajajo mesta, kjer nisem vedel, da sem registriran s tem up. imenom.
 
 Primerjajte rezultate Sherlocka in Maigreta. Katere razlike ste opazili?
--Razvidno iz zgornje primerjave po alinejah. Sicer je Sherlock našel tudi nekaj ezultatov/računov, ki jih Maigret ni, čeprav naj bi ponujal bolj obsežno iskanje. Ključno je torej, da uporabimo več različnih orodij hkrati, če želimo najbolj kakovostno analizo kibernetske varnosti.
+-Razvidno iz zgornje primerjave po alinejah. Sicer je Sherlock našel tudi nekaj ezultatov/računov, 
+ki jih Maigret ni, čeprav naj bi ponujal bolj obsežno iskanje. Ključno je torej, da uporabimo 
+več različnih orodij hkrati, če želimo najbolj kakovostno analizo kibernetske varnosti.
 
-Ali ste našli kakšno občutljivo informacijo (npr. e‑poštni naslov, zasebne slike, telefonsko številko)? Kako bi jo lahko oseba zaščitila pred tem, da je javno dostopna?
--Našel sem le polno ime na računu Bitbucket. Po podrobnem pregledu sem ugotovil, da se te informacije ne da skriti, saj tako piše v njihovih pogojih uporabe storitve. 
+Ali ste našli kakšno občutljivo informacijo (npr. e‑poštni naslov, zasebne slike, telefonsko številko)? 
+Kako bi jo lahko oseba zaščitila pred tem, da je javno dostopna?
+-Našel sem le polno ime na računu Bitbucket. Po podrobnem pregledu sem ugotovil, da se te informacije 
+ne da skriti, saj tako piše v njihovih pogojih uporabe storitve. 
 
 Katere informacije so bile najlažje najdene? Katere je bilo najtežje najti?
 Kako bi vi sami prilagodili svoje vedenje na spletu, potem ko ste izvedli to vajo?
@@ -27,5 +34,11 @@ Ali menite, da je uporaba OSINT orodij etično sporna? V katerih primerih je upr
 
 -Najlažje je bilo najti email in polno ime. 
 -Najtežje (nemogoče): geslo, zasebne slike, sporočila, tel. št. ...
--Prilagajanje vedenja na spletu: Lahko se za polno ime uporablja izmišljeno ime (kjer to zares ni pomembno) ali okrajšava: npr. Luka O. Lahko se uporablja tudi različne up. imena, ki ne vsebujejo že sama dele imena ali priimka ali katerihkoli osebnih podatkov. Pomembna je tudi odstranitev straih (neuporabljenih) računov = uinitev računa. Ključna je tudi redna menjava in nastavitev kakovostnega gesla. 
--Etično vprašanje: neetična se mi zdi uporaba v primeru škodovanja uporabniku in namenskega vdora in poseganje v uporabnikov zasebni prostor. Je pa res, da smo s previdno uporabo lahko dobro zaščiteni (redna menjava gesel, 2FA, izmišljena imena, ne objavljamo osebnih podatkov na profilih ...). Etična uporaba: dober primer je lahko vaja, ki sem jo ravnokar izvedel. Naredil sem nekakšno zasebno analizo in ugotovil, kako lahko ukrepam da bom na internetu bolj varen. Če tegh orodij ne bi bi bilo, tega ne bi tako zlahka preveril. Uporaba se mi zdi torej dokaj etična, saj je skrb za zasebnost podatkov tudi v veliki meri na nas posameznikih. 
+-Prilagajanje vedenja na spletu: Lahko se za polno ime uporablja izmišljeno ime 
+    (kjer to zares ni pomembno) ali okrajšava: npr. Luka O. Lahko se uporablja tudi različne up. imena, 
+    ki ne vsebujejo že sama dele imena ali priimka ali katerihkoli osebnih podatkov. Pomembna je tudi 
+    odstranitev straih (neuporabljenih) računov = uinitev računa. Ključna je tudi redna menjava in nastavitev 
+    kakovostnega gesla. 
+-Etično vprašanje: 
+    neetična se mi zdi uporaba v primeru škodovanja uporabniku in namenskega vdora in 
+    poseganje v uporabnikov zasebni prostor. Je pa res, da smo s previdno uporabo lahko dobro zaščiteni (redna menjava gesel, 2FA, izmišljena imena, ne objavljamo osebnih podatkov na profilih ...). Etična uporaba: dober primer je lahko vaja, ki sem jo ravnokar izvedel. Naredil sem nekakšno zasebno analizo in ugotovil, kako lahko ukrepam da bom na internetu bolj varen. Če tegh orodij ne bi bi bilo, tega ne bi tako zlahka preveril. Uporaba se mi zdi torej dokaj etična, saj je skrb za zasebnost podatkov tudi v veliki meri na nas posameznikih. 

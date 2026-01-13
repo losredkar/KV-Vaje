@@ -2,18 +2,40 @@
 
 2) Analiza osebne izpostavljenosti
 
-Preveril sem svoje javne profile. Ne uporabljam socialnih omrežij, zato o meni ni veliko sledi, le  prazen profil Na Facebooku. Najdel sem sliko sebe, ki jo je objavila avtošola, vendar je bilo to pričakovano, saj so me vprašali za dovoljenje. Našel sem tudi svojo diplomsko nalogo, ki je bila prav tako objavljena z mojim dovoljenjem. 
+Preveril sem svoje javne profile. Ne uporabljam socialnih omrežij, zato o meni ni veliko sledi, 
+le  prazen profil Na Facebooku. Najdel sem sliko sebe, ki jo je objavila avtošola, 
+vendar je bilo to pričakovano, saj so me vprašali za dovoljenje. Našel sem tudi 
+svojo diplomsko nalogo, ki je bila prav tako objavljena z mojim dovoljenjem. 
 
 Uporabil sem orodja HaveIBeenPwned in OSINTLeak.
--HaveIBeenPwned: moj elektronski naslov je bil del 6 data breaches (izpostavljenost mojih podatkov v podatkovnih kršitvah - vdorih), kar nisem ravno pričakoval (krivi so Open Subtitles, Jefit, Deezer, Mindjolt, ai.type in Adobe), saj je med njimi kar nekaj znanih podjetij. Zanimivo se mi je zdelo to, da me o tem sami niso obvestili. Razkriti naj bi bili podatki o mojem spolu, rojstvu, uporabniškem imenu, namigi o mojem geslu, jezik uporabniškega vmesnika ipd. Vsi te podatki so osebni podatki, za kar bi podjetja morala odgovarjati. Gesla sicer redno posodabljam (in imam za vsak račun malo drugačna), da zagotovim čim večjo varnost mojih podatkov in preprečim zlorabe. Prav tako se lahko varnost poveča z aktivirano dvofaktorsko avtentikacijo. 
--OSINTLeak (preverjanje, če so bili moji občutljivi/osebni podatki na internetu objavljeni zaradi slabe varnosti): Našel sem hash vrednosti gesel iz podatkovnih kršitev, ki sem jih navedel pri prejšnji HaveIBeenPwned alineji. Našel sem tudi popolnoma odkrite osebne podatke, ki jih je razkril Deezer (spol, datum pridružitve, jezik, in polno ime) - na podlagi iskanja po e-poštnem naslovu. 
+-HaveIBeenPwned: moj elektronski naslov je bil del 6 data breaches 
+(izpostavljenost mojih podatkov v podatkovnih kršitvah - vdorih), 
+kar nisem ravno pričakoval (krivi so Open Subtitles, Jefit, Deezer, Mindjolt, ai.type in Adobe), 
+saj je med njimi kar nekaj znanih podjetij. Zanimivo se mi je zdelo to, da me o tem sami niso obvestili. 
+Razkriti naj bi bili podatki o mojem spolu, rojstvu, uporabniškem imenu, namigi o mojem geslu, 
+jezik uporabniškega vmesnika ipd. Vsi te podatki so osebni podatki, za kar bi podjetja morala odgovarjati. 
+Gesla sicer redno posodabljam (in imam za vsak račun malo drugačna), da zagotovim čim večjo varnost mojih 
+podatkov in preprečim zlorabe. Prav tako se lahko varnost poveča z aktivirano dvofaktorsko avtentikacijo. 
+-OSINTLeak (preverjanje, če so bili moji občutljivi/osebni podatki na internetu objavljeni zaradi slabe varnosti): 
+Našel sem hash vrednosti gesel iz podatkovnih kršitev, ki sem jih navedel pri prejšnji HaveIBeenPwned alineji. 
+Našel sem tudi popolnoma odkrite osebne podatke, ki jih je razkril Deezer 
+(spol, datum pridružitve, jezik, in polno ime) - na podlagi iskanja po e-poštnem naslovu. 
 
 3) Refleksija in analiza.
--Kršitve so bile opravljene v letih 2017-2020. Gesla redno menjam in imam že nekaj časa vklopljeno dvofaktorsko avtentikacijo (kjer je mogoče), zato je po mojem mnenju zelo malo možnosti za zlorabo. So pa bili razkriti nekateri moji osebni podatki kot so spol in jezik, ki vseeno nista tako pomembna podatka, vendar do takih data leakov ne bi smelo priti, saj so podatki popolnoma zasebni, osebni in ne javni. Deezer račun sem zaradi varnosti ukinil. Hash (geslo) bi potencialno lahko razbili, če bi poznali algoritem, zato gre za kar visoko tveganje, sploh če je uporabljen slab algoritem za soljenje gesel. Osebni podatki bi lahko bili uporabljeni za socialni inženiring (datum rojstva in spol). Pri Deezerju bi lahk odostopali tudi do mjih osebnih itneresov (glasbe), kar olajša personalizirane poskuse lažnega predstavljanja.
+-Kršitve so bile opravljene v letih 2017-2020. Gesla redno menjam in imam že nekaj časa vklopljeno 
+dvofaktorsko avtentikacijo (kjer je mogoče), zato je po mojem mnenju zelo malo možnosti za zlorabo. 
+So pa bili razkriti nekateri moji osebni podatki kot so spol in jezik, ki vseeno nista tako pomembna podatka, 
+vendar do takih data leakov ne bi smelo priti, saj so podatki popolnoma zasebni, osebni in ne javni. Deezer 
+račun sem zaradi varnosti ukinil. Hash (geslo) bi potencialno lahko razbili, če bi poznali algoritem, 
+zato gre za kar visoko tveganje, sploh če je uporabljen slab algoritem za soljenje gesel. Osebni podatki bi 
+lahko bili uporabljeni za socialni inženiring (datum rojstva in spol). Pri Deezerju bi lahk odostopali tudi 
+do mjih osebnih itneresov (glasbe), kar olajša personalizirane poskuse lažnega predstavljanja.
 
 Morebitni črni scenariji: 
 - Hash geslo se z uporabo orodja (npr. Hashcat)  uspe razbiti in dobi dejansko geslo.
 - Geslo lahko napadalec uporabi za kater drug račun (veliko uporabnikov ima za različne aplikacije enaka gesla)
 -Socialni inženiring z osebnimi podatki (npr klic podpori s poznanimi osebnimi podatki za menjavo gesla)
 
-Prišlo je do nekaj nevarnih scenarijev, ki jih rešujem z redno menjavo gesla (ki je ustrezno kompleksno) in aktivitano dvofaktorsko avtentikacijo in brisanjem starih računov - tudi s pomočjo rezultatov teh dveh orodij, ki sem jih uporabil. 
+Prišlo je do nekaj nevarnih scenarijev, ki jih rešujem z redno menjavo gesla (ki je ustrezno kompleksno) 
+in aktivitano dvofaktorsko avtentikacijo in brisanjem starih računov - tudi s pomočjo rezultatov 
+teh dveh orodij, ki sem jih uporabil. 

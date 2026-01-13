@@ -1,0 +1,1 @@
+Poglej file na linuxu 

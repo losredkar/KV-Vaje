@@ -1,0 +1,72 @@
+Analiza lokacije z exiftool:
+
+GPS Altitude                    : 2549 m Above Sea Level
+GPS Latitude                    : 46 deg 22' 50.37" N
+GPS Longitude                   : 13 deg 51' 11.99" E
+
+Če podatke o lokaciji vstavimo v Google maps(po pretvorbi: 46.380659, 13.853331), 
+res dobimo pravo lokacijo fotografije - Triglav. Tudi višina ustreza realnim podatkom.
+
+Timestamp                       : 2024:08:24 19:48:53.408+02:00
+Modify Date                     : 2024:08:24 19:48:53.408+02:00
+
+Timestamp nam sporoča, kdaj je bila slika posneta. Iz podatkov je razvidno, da 
+ob 19:48, dne 24.8.2024. Ker je 'Modify date', torej čas zadnje spremembe enak Timestamp, pomeni, da slika
+ni bila dodatno obdelana ali spremenjena. 
+
+Iz podakov razberemo tudi podatke o napravi, ki je posnela fotografijo.
+Gre za podatke kot so: znamka, model, programska oprema, ločljivost kamere.
+
+Make                            : samsung
+Camera Model Name               : Galaxy S24 Ultra
+Software                        : S928BXXS3AXGF
+Megapixels                      : 12.0
+
+Razberemo tudi vse podatke o lastnostih same fotografije-nastavitvah fotografiranja:
+čas osvetlitve, zaslonka, ISO, goriščna razdalja , način osvetlitve, kompenzacija osvetlitve, svetlost, bliskavica ...
+Nekatere lastnosti so navedene spodaj: 
+Shutter Speed Value             : 1
+Aperture Value                  : 1.7
+Brightness Value                : 7.82
+Exposure Compensation           : 0
+Max Aperture Value              : 1.7
+Metering Mode                   : Center-weighted average
+Flash                           : No Flash
+Focal Length                    : 6.3 mm
+Sub Sec Time                    : 408
+Sub Sec Time Original           : 408
+Sub Sec Time Digitized          : 408
+Flashpix Version                : 0100
+Color Space                     : Uncalibrated
+Exif Image Width                : 4000
+Exif Image Height               : 3000
+Exposure Mode                   : Auto
+White Balance                   : Auto
+Digital Zoom Ratio              : 1
+Focal Length In 35mm Format     : 23 mm
+
+Glede varnosti/zasebnosti bi upprabniku priporočal, da pred objavo slike skrije informacije, ki so lahko
+zanimive za spletne nepridiprave: lokacija, podatki o telefonu, čas zajema. To lahko uporabnik stori
+z orodji, ki te podatke pobrišejo namesto njega (nor Exiftool). S tem se zavarujemo pred rakritjem
+lokacije, kjer se nahajamo (kraja/razkritje službenega ali domačega naslova), zmanjšamo tudi možnosti za zasledovanje 
+(pomembno recimo sploh pri otrocih) in ne razkrivamo kako vredne stvari imamo (za tatove). 
+Da, sem že objavljal slike na spletu, sedaj bom zagotovo pazil, da bom iz občutljivih fotografij odstranil določene metapodatke.
+
+Z orodjem exiftool sem odstranil/povozil vse podatke o fotografiji, zato imamo po odstranitvi na voljo le spodnje vrednosti:
+(exiftool.exe -all= 20240824_194853.jpg)
+File Size                       : 2.3 MB
+File Modification Date/Time     : 2025:12:06 11:31:46+01:00
+File Access Date/Time           : 2025:12:06 11:32:09+01:00
+File Creation Date/Time         : 2025:12:06 11:28:49+01:00
+File Permissions                : -rw-rw-rw-
+File Type                       : JPEG
+File Type Extension             : jpg
+MIME Type                       : image/jpeg
+Image Width                     : 4000
+Image Height                    : 3000
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
+Image Size                      : 4000x3000
+Megapixels                      : 12.0
